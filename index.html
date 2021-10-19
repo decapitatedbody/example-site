@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/snake.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Photo site</title>
+</head>
+<body>
+    <div id="overlay">
+        <div id="modal">
+            <div id="carousel">
+                <div class="carousel-btns">
+                    <button id="prev-btn" aria-label="Previous Slide">←</button>
+                    <button id="next-btn" aria-label="Next Slide">→</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container-nav">
+            <div class="site-title">
+                <h1>Logo</h1>
+                <p class="subtitle">Subtitle</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><button id="portfolio-btn" class="nav-btn site-btn">Gallery</button></li>
+                    <li><button id="snakeGame-btn" class="nav-btn site-btn">Snake Game</button></li>
+                    <li><button id="contactForm-btn" class="nav-btn site-btn">Contact</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-main">
+            <div id="portfolio">
+                <div id="portfolio-container"></div>
+            </div>
+            <div id="snakeGame">
+                <div class="container-snake">
+                    <h2 class="snake-title">Snake Game</h2>
+                    <div class="lost-game">
+                        <h1>Your score: <span id="score"></span></h1>
+                    </div>
+                    <!-- <h3>Score: <span id="score"></span></h3> -->
+                    <div class="grid"></div>
+                    <button class="site-btn" id="start">Start</button>
+                </div>
+            </div>
+            <div id="contactForm">
+                <div class="container-form">
+                    <h2>Contact</h2>
+                    <form action="" method="POST">
+                       <div class="name-div form-input">
+                           <input type="text" name="name" placeholder="First and last name" id="name" required>
+                           <input type="email" name="email" placeholder="Email" id="email" required>
+                       </div>
+                        <div class="form-input">
+                            <input type="text" name="subject" placeholder="Subject" id="subject" required>
+                        </div>
+                        <div class="form-input">
+                            <textarea type="text" name="message" placeholder="Message" id="message" required></textarea>
+                        </div> 
+                        <button class="site-btn" type="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+            <h6>Footer</h6>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>

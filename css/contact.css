@@ -1,0 +1,78 @@
+#contactForm {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10em;
+    position: relative;
+    color: white;
+    height: 100%;
+    z-index: 1;
+}
+
+.container-form:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--clr-dark);
+    border: 1px rgba(255, 255, 255, 0.1) solid;
+    opacity: 0.5;
+}
+
+.container-form h2 {
+    align-self: left;
+}
+
+input,
+textarea {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    font-size: 1.2rem;
+    opacity: 0.4;
+    border: none;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.name-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-input {
+    width: 40em;
+    margin-bottom: 0.5em;
+}
+
+#name, 
+#email {
+    width: 49%;
+}
+
+#subject, 
+#message {
+    width: 100%;
+}
+
+#name, 
+#email,
+#subject {
+    height: 3em;
+}
+
+#message {
+    height: 15em;
+    resize: none;
+}
+
+#submit {
+    opacity: 0.7;
+}
