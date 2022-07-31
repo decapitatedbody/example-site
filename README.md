@@ -1,1 +1,1 @@
-https://decapitatedbody.github.io/example-site/
+https://greedychicken.github.io/example-site/
